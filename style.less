@@ -1,0 +1,192 @@
+/* Déclaration */
+@bleu: #00a4c2;
+@bleuclair: #57c1d4;
+@grisfonce: #313131;
+@blanc: #FFFFFF;
+@strokeborder: 5px;
+@padding: 40px;
+@grisclair: #9b9b9b;
+
+html,body{
+	margin:0;
+	padding:0;
+}
+body{
+	header{
+		background-color: @bleu;
+		margin:0;
+		padding:0;
+		h1{
+			text-transform: uppercase;
+	    	color: @blanc;
+	    	font-family: arial;
+	    	display: inline-block;
+	    	vertical-align: bottom;
+	    	margin: 0;
+	    	padding: @padding;
+		}
+		nav{
+			display: inline-block;
+	    	float: right;
+	    	vertical-align: middle;
+	    	padding: 30px;
+	   	 	margin: 0;
+			ul{
+				li{
+					display: inline-block;
+					margin-left:20px;
+					a{
+						text-decoration: none;
+						color: @blanc;
+						text-transform: uppercase;
+						font-family: arial;
+						padding:20px;
+					}
+					a:hover{
+						border-top: @strokeborder solid @blanc;
+					}
+				}
+			}
+		}
+	}
+	aside{
+		padding-left:@padding;
+		p{
+			font-family: arial;
+			color: @bleuclair;
+		}
+		p::before{
+			content: ">";
+			display: inline-block;
+			padding-right:5px;
+		}
+	}
+	article{
+		padding-left:@padding;
+		padding-right: @padding;
+		h2{
+			font-family: arial;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: @grisfonce;
+			font-size: 2.2em;
+			padding:0;
+			margin:0;
+		}
+		p:nth-child(2){
+			font-family: arial;
+			color:@grisfonce;
+			line-height: 28px;
+			font-size: 1.2em;
+		}
+		img{
+			width: 310px;
+			height: auto;
+			border: @blanc 10px solid;
+			-moz-box-shadow: 0px 0px 20px 0px #cfcfcf;
+			-webkit-box-shadow: 0px 0px 20px 0px #cfcfcf;
+			-o-box-shadow: 0px 0px 20px 0px #cfcfcf;
+			box-shadow: 0px 0px 20px 0px #cfcfcf;
+			filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=NaN, Strength=20);
+		}
+		p:nth-child(4){
+			font-family: Arial;
+			color:@grisclair;
+		}
+
+	}
+	footer{
+		background: 
+    		linear-gradient(45deg,@bleu 25%, transparent 26%),
+		    linear-gradient(-45deg,@bleu 25%, transparent 26%),
+		    linear-gradient(-45deg,@bleu,@bleu) 0 0  no-repeat;
+		    border-top:1em solid transparent;
+    	padding-bottom:10px;
+    	background-size: 1.3em 1.3em, 1.3em 1.3em, 100% 100%;
+    	div:nth-child(1){
+    		display: inline-block;
+    		padding-left: @padding;
+    		h3{
+    			text-transform: uppercase;
+    			color:@blanc;
+    			font-family: arial;
+    			font-size: 2em;
+    		}
+    		h3:after{
+    			content:":";
+    			display: inline-block;
+    			color:@blanc;
+    		}
+    		ul{
+    			list-style-type: none;
+    			margin:0;
+    			padding: 0;
+    			li{
+    				display: inline-block;
+	    				.IconRSS {
+						    background: transparent url('../img/sprite.png') 0px 0px no-repeat;
+						    width: 78px;
+						    height: 74px;
+						    display: block;
+						    text-indent: 100%;
+						    white-space: nowrap;
+						    overflow: hidden;
+						}
+						.IconTwitter{
+						    background: transparent url('../img/sprite.png') -94px 0px no-repeat;
+						    width: 78px;
+						    height: 74px;
+						    display: block;
+						    text-indent: 100%;
+						    white-space: nowrap;
+						    overflow: hidden;
+						}
+						.IconViadeo{
+						    background: transparent url('../img/sprite.png') -278px 0px no-repeat;
+						    width: 78px;
+						    height: 74px;
+						    display: block;
+						    text-indent: 100%;
+						    white-space: nowrap;
+						    overflow: hidden;
+						}
+						.IconFacebook{
+						    background: transparent url('../img/sprite.png') -369px 0px no-repeat;
+						    width: 78px;
+						    height: 74px;
+						    display: block;
+						    text-indent: 100%;
+						    white-space: nowrap;
+						    overflow: hidden;
+						}
+    			}
+    		}
+    	}
+    	div:nth-child(2){
+    		display: inline-block;
+    		float: right;
+    		padding-right:@padding;
+    		h3{
+    			text-transform: uppercase;
+    			color:@blanc;
+    			font-family: arial;
+    			font-size: 2em;
+    		}
+    		h3:after{
+    			content:":";
+    			display: inline-block;
+    			color:@blanc;
+    		}
+    		input{
+    			background-color: @blanc;
+    			border-radius: 20px;
+    			border:none;
+    			padding:20px;
+    			font-family: arial;
+    			color: @grisclair;
+    			text-transform: uppercase;
+    		}
+    	}
+	}
+}
